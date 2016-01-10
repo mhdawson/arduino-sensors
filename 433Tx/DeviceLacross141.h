@@ -5,7 +5,7 @@
 #ifndef _DEVICELACROSS141
 #define _DEVICELACROSS141
 
-#include "Device.h"
+#include "TXDevice.h"
 
 class DeviceLacross141 : public TXDevice {
    public:

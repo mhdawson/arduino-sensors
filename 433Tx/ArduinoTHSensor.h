@@ -5,7 +5,7 @@
 #ifndef _ARDUINO_TH_SENSOR
 #define _ARDUINO_TH_SENSOR
 
-#include "Device.h"
+#include "TXDevice.h"
 
 class ArduinoTHSensor : public TXDevice {
    public:
