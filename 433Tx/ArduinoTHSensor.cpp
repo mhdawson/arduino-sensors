@@ -4,14 +4,16 @@
 
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
 #include "ArduinoTHSensor.h"
 
 #define MESSAGE_REPEAT_COUNT 15
 #define REGISTER_TRANSMITS 4
 
-ArduinoTHSensor::ArduinoTHSensor(char deviceCode) {
+ArduinoTHSensor::ArduinoTHSensor(char deviceCode, int sensorPin, uint8_t sensorType, int txPin) {
    _deviceCode = deviceCode;
+   _dht = new DHT(sensorPin, sensorType);
+   setTxPin(txPin);
+   _dht->begin();
 }
 
 void ArduinoTHSensor::sendSync(void) {
@@ -32,8 +34,12 @@ void ArduinoTHSensor::sendByte(char byte) {
    }
 }
 
-int ArduinoTHSensor::sendMessage(int temp, int humidity) {
+int ArduinoTHSensor::sendMessage() {
    char bytes[4];
+
+   int humidity = (int) _dht->readHumidity();
+   int temp = (int) (_dht->readTemperature() + 0.5);
+   
    bytes[3] = _deviceCode;
    bytes[1] = (char) (temp + 128);
    bytes[2] = (char) humidity;

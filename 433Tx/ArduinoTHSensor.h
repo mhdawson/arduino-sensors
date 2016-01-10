@@ -5,15 +5,17 @@
 #ifndef _ARDUINO_TH_SENSOR
 #define _ARDUINO_TH_SENSOR
 
+#include "DHT.h"
 #include "TXDevice.h"
 
 class ArduinoTHSensor : public TXDevice {
    public:
-      ArduinoTHSensor(char deviceCode);
-      int sendMessage(int temp, int humidity);
+      ArduinoTHSensor(char deviceCode, int sensorPin, uint8_t sensorType, int txPin);
+      int sendMessage();
 
    private:
       char _deviceCode;
+      DHT* _dht;
       void sendSync(void);
       void sendByte(char byte);
       void addChecksum(char* bytes);
