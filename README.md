@@ -9,5 +9,5 @@ a number of sketches, extracting common components
 in directories so they are re-used across
 sketches
 
-Once its suitable to re-use/use by others I'll 
+Once its suitable for re-use/use by others I'll 
 update this readme
