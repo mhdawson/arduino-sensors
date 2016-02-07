@@ -1,13 +1,25 @@
-# Aduino Sensors
+# Aduino Sensors/Controllers
 
-Will end up providing the code for a number of 
-Aduino based sensors, initially with communication
-using 433Mhz.
+This project provides components for building Arduino based
+sensors/controller, initially using the following projects
+to bridge into the home monitoring/control logic:
 
-Currently a work in progress as I pull code from
-a number of sketches, extracting common components
-in directories so they are re-used across
-sketches
+[PI433WirelessRecvManager](https://github.com/mhdawson/PI433WirelessRecvManager)
+[PI433WirelessTXManager](https://github.com/mhdawson/PI433WirelessTXManager)
 
-Once its suitable for re-use/use by others I'll 
-update this readme
+The components are located within:
+
+* arduino-sensors/433Tx
+* arduino-sensors/443Rx
+* arduino-sensors/IR
+
+These can be combined in order to build specific sensors that combine
+one or more of the sensor/controller capabilities
+
+# Examples
+
+Sample sensors built from these components include:
+
+*[DoorAndTempSensor](https://github.com/mhdawson/arduino-sensors/tree/master/DoorAndTempSensor)
+
+

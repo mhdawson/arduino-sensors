@@ -11,6 +11,14 @@ To receive the data from these sensors use the following from the
 * Device2262n
 
 
+It uses the following sensors from arduino-sensors/433Tx
+
+* ArduinoDS18B20Sensor
+* Device2272
+
+to implemenent the arduino sensor.
+
+
 # Configuration
 
 The following constants can be adjusted to fit your build
