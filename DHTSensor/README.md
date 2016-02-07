@@ -26,9 +26,7 @@ and configuration
   you have multiple sensors make this unique 
 * DHT_PIN 2 - the digital pin to which the DHT device is wired
 * TRANSMIT_INTERVAL_SECONDS - The interval at which the sensor sends
-                              updates.  In addition the sensor
-                              will send an update when the door
-                              open/close state changes
+                              updates.
 
 # Building
 

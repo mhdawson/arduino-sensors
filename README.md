@@ -21,5 +21,6 @@ one or more of the sensor/controller capabilities
 Sample sensors built from these components include:
 
 * [DoorAndTempSensor](https://github.com/mhdawson/arduino-sensors/tree/master/DoorAndTempSensor)
+* [DHTSensor](https://github.com/mhdawson/arduino-sensors/tree/master/DHTSensor)
 
 
