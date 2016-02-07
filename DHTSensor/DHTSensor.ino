@@ -3,6 +3,7 @@
 
 #define TX_433_PIN 3
 
+#define TRANSMIT_INTERVAL_SECONDS 30000
 #define TH_SENSOR_DEVICE_ID 0x21
 #define DHT_PIN 2 
 // Selecct the DHT type attached to your arduino 
@@ -22,5 +23,5 @@ void setup() {
 void loop() {
   arduinoTHSensor.sendMessage();
   Serial.println("Sent Message");
-  delay(30000);
+  delay(TRANSMIT_INTERVAL_SECONDS);
 }
