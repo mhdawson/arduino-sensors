@@ -4,8 +4,8 @@ This project provides components for building Arduino based
 sensors/controller, initially using the following projects
 to bridge into the home monitoring/control logic:
 
-[PI433WirelessRecvManager](https://github.com/mhdawson/PI433WirelessRecvManager)
-[PI433WirelessTXManager](https://github.com/mhdawson/PI433WirelessTXManager)
+* [PI433WirelessRecvManager](https://github.com/mhdawson/PI433WirelessRecvManager)
+* [PI433WirelessTXManager](https://github.com/mhdawson/PI433WirelessTXManager)
 
 The components are located within:
 
@@ -20,6 +20,6 @@ one or more of the sensor/controller capabilities
 
 Sample sensors built from these components include:
 
-*[DoorAndTempSensor](https://github.com/mhdawson/arduino-sensors/tree/master/DoorAndTempSensor)
+* [DoorAndTempSensor](https://github.com/mhdawson/arduino-sensors/tree/master/DoorAndTempSensor)
 
 
