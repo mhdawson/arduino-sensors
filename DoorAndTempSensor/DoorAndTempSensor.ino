@@ -13,10 +13,10 @@
 
 // device id used in message transmitted for the
 // temp sensor
-#define DS18B20_SENSOR_ID 0x55
+#define DS18B20_SENSOR_ID 0x24
 
 // 2272 codes used to signify open or closed door
-#define DEVICE_2272_ID "1111FFFF000"
+#define DEVICE_2272_ID "0101FFFF000"
 #define CLOSED "1"
 #define OPEN "0"
 
