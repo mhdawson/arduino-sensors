@@ -41,6 +41,9 @@ and configuration
 
 To build you need to do the following:
 
+* Add the [OneWire](http://www.pjrc.com/teensy/td_libs_OneWire.html)
+  and [DallasTemperture](http://milesburton.com/Main_Page?title=Dallas_Temperature_Control_Library)
+  libraries as libraries in your Arduino IDE
 * Create a new directory called DoorAndTempSensor
 * Copy DoorAndTenmpSensor.ino into the directory
 * Copy either the specific files referenced in DoorAndTempSensor.ino

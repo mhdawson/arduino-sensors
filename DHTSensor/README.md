@@ -32,6 +32,8 @@ and configuration
 
 To build you need to do the following:
 
+* Add the [DHT-Sensor-library](https://github.com/adafruit/DHT-sensor-library) 
+  as a library in your Arduino GUI 
 * Create a new directory called DHTSensor
 * Copy DHTSensor.ino into the directory
 * Copy either the specific files referenced in DHTSensor.ino
