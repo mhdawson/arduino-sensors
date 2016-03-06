@@ -90,7 +90,7 @@ used:
 The following are a few pictures of my build:
 
 ![picture1](https://raw.githubusercontent.com/mhdawson/arduino-sensors/master/pictures/ACRemote.jpg)
-![picture2](https://raw.githubusercontent.com/mhdawson/arduino-sensors/master/pictures/ACRemote.jpg)
+![picture2](https://raw.githubusercontent.com/mhdawson/arduino-sensors/master/pictures/ACRemote2.jpg)
 
 # Main Components
 
