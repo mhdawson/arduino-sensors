@@ -9,11 +9,10 @@ To receive the data from these sensors use the following from the
 * ArduinoLightSensor
 
 
-It uses the following sensors from arduino-sensors/433Tx
+On the arduino side the project uses the following sensors
+from arduino-sensors/433Tx:
 
 * ArduinoLightSensor
-
-to implemenent the arduino sensor.
 
 
 # Configuration
@@ -40,7 +39,7 @@ To build you need to do the following:
 * Copy LightSensor.ino into the directory
 * Copy either the specific files referenced in LightSensor.ino
   from arduino-sensors/433Tx or the whole directory
-* Open DHTSensor.ino with the Arduino GUI,
+* Open LightSensor.ino with the Arduino GUI,
   build and then flash into the Arduino
 
 # Schematic
