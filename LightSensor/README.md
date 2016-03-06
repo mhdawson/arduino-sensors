@@ -47,7 +47,7 @@ To build you need to do the following:
 The following is the schematic for the sensor hardware that I
 used:
 
-![schematic](https://raw.githubusercontent.com/mhdawson/arduino-sensors/master/pictures/ligthSensor_diag.jpg)
+![schematic](https://raw.githubusercontent.com/mhdawson/arduino-sensors/master/pictures/lightSensor_diag.jpg)
 
 # Main Components
 
