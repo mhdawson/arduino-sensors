@@ -25,9 +25,6 @@ and configuration
 
 * PHOTOCELL_PIN            - analog pin to which the light sensor is connected
 
-* TH_SENSOR_DEVICE_ID      - The id for the TH sensor, if you have more than 
-                             one of these sensor make shure this is unique0
-
 * LIGHT_SENSOR_DEVICE_ID   - device id assigned to the light sensor. If you have more
                              than one of these make sure this id is unique
 
