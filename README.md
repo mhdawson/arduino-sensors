@@ -23,5 +23,6 @@ Sample sensors built from these components include:
 * [DoorAndTempSensor](https://github.com/mhdawson/arduino-sensors/tree/master/DoorAndTempSensor)
 * [DHTSensor](https://github.com/mhdawson/arduino-sensors/tree/master/DHTSensor)
 * [ACRemote](https://github.com/mhdawson/arduino-sensors/tree/master/ACRemote)
+* [LightSensor](https://github.com/mhdawson/arduino-sensors/tree/master/LightSensor)
 
 
