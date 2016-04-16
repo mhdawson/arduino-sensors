@@ -48,7 +48,12 @@ void loop() {
        strncat(message, CLOSED, NUM_CHARS_IN_MESSAGE);
      }
      tx.sendMessage(message);
+     delay(250);
      tempSensor.sendTemp();
+     if (lastState != state) {
+       delay(1000);
+       tx.sendMessage(message);
+     }
      counter = 0;
   }
   

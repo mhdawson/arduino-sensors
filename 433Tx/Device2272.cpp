@@ -9,15 +9,15 @@
 
 #define SHORT 1*_pulseWidth
 #define LONG 3*_pulseWidth
-#define SYNC_LENGTH_LOW 1*_pulseWidth
-#define SYNC_LENGTH_HIGH 31*_pulseWidth
+#define SYNC_LENGTH_LOW 5*_pulseWidth
+#define SYNC_LENGTH_HIGH 37*_pulseWidth
 
 #define INVALID_NUM_CHARS_IN_MESSAGE  -1
 #define INVALID_CHAR                  -2 
 
 // The 2262/2272 protocol indicates a CODE frame is 4 CODE words so we need to 
 // repeat at least 4 times 
-#define REPEAT 10
+#define REPEAT 8
 Device2272::Device2272(int txpin, int pulseWidth) {
    setTxPin(txpin);
    _pulseWidth = pulseWidth;
@@ -30,6 +30,9 @@ int Device2272::sendMessage(char* message) {
          return INVALID_NUM_CHARS_IN_MESSAGE;
       }
 
+      // sync
+      sendPulseLowHigh(SYNC_LENGTH_LOW,SYNC_LENGTH_HIGH);
+
       // protocol indicates that CODEWORD has 12 bits followed by sync
       // first 8 are the address of the device, the next 4 the data value, 
       // and the last the sync
@@ -38,8 +41,6 @@ int Device2272::sendMessage(char* message) {
             return INVALID_CHAR;
          } 
       }
-      // sync
-      sendPulseLowHigh(SYNC_LENGTH_LOW,SYNC_LENGTH_HIGH);
    }
 }
 
